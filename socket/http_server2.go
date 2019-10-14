@@ -23,6 +23,7 @@ func main() {
 }
 
 func handleClient(conn net.Conn) {
+	fmt.Print("-")
 	defer conn.Close()
 	msg := "HTTP/1.1 200 OK\r\n"
 	msg += "Content-Length: 51\r\n"
