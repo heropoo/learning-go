@@ -3,13 +3,12 @@ package main
 import (
 	"fmt"
 	"io"
+	"io/ioutil"
 	"log"
 	"net/http"
 )
 
 func main() {
-	//fmt.Println("Hello World")
-
 	http.HandleFunc("/", showIndex)
 	http.HandleFunc("/login", login)
 
@@ -22,10 +21,16 @@ func main() {
 
 //首页
 func showIndex(w http.ResponseWriter, r *http.Request) {
-	io.WriteString(w, "Hello World!")
+	data, err := ioutil.ReadFile("public/index.html")
+	if err != nil {
+		fmt.Println("File reading error", err)
+		return
+	}
+
+	io.WriteString(w, string(data))
 }
 
 // 登录
 func login(w http.ResponseWriter, r *http.Request) {
-
+	io.WriteString(w, "Login")
 }
