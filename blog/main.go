@@ -12,11 +12,13 @@ func main() {
 	http.HandleFunc("/", showIndex)
 	http.HandleFunc("/login", login)
 
+	fmt.Println("Listen and serve on http://127.0.0.1:8080")
+
 	err := http.ListenAndServe(":8080", nil)
+	
 	if err != nil {
 		log.Fatal("Listen and serve: ", err.Error())
 	}
-	fmt.Println("Listen and serve on 127.0.0.1:8080")
 }
 
 //首页
