@@ -19,6 +19,8 @@ ARG USER_GID=$USER_UID
 RUN sed -i 's/security.debian.org/mirrors.aliyun.com/g' /etc/apt/sources.list \
     && sed -i 's/deb.debian.org/mirrors.aliyun.com/g' /etc/apt/sources.list 
 
+ENV GOPROXY=https://mirrors.aliyun.com/goproxy/
+
 # Configure apt, install packages and tools
 RUN apt-get update \
     && apt-get -y install --no-install-recommends apt-utils dialog 2>&1 \
