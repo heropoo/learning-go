@@ -34,4 +34,30 @@ Functions:  make  len  cap  new  append  copy  close  delete
 
 关键字和保留字都不能用作变量名。
 
-待续...
+## 变量
+变量是存储位置的名称，用于存储特定类型的值。在 go 中声明变量有多种语法。
+
+我们使用 `var` 关键字申明一个变量，语法是：
+```go
+var 变量名 类型
+```
+
+我们写个例子 `var_01.go` ：
+```go
+package main
+
+import "fmt"
+
+func main() {
+    var age int     // 定义一个变量age，类型为int类型
+    fmt.Println("Var age is", age)
+}
+```
+
+运行代码输出：
+```sh
+Var age is 0
+```
+
+上面代码`var age int` 声明一个名为 age 的 int 类型的变量，我们没有给变量分配任何值，但是运行之后输出 `0`。这是因为如果没有为变量赋值，则使用变量类型的零值自动初始化它。
+
