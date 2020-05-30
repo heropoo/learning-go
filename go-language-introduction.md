@@ -1,7 +1,6 @@
 ---
 title: Go语言介绍
 date: 2020-05-30 12:30:30
-tags:
 ---
 
 ## 介绍
@@ -12,7 +11,7 @@ Go是从2007年末由Robert Griesemer, Rob Pike, Ken Thompson主持开发，后�
 
 Go 是一种通用编程语言，语法简单，并有健壮的标准库支持。Go 突出的一个关键领域是创建高可用性和可伸缩的 web 应用程序。Go 还可以用于创建命令行应用程序、桌面应用程序甚至移动应用程序。
 
-官方网站：https://golang.org/
+官方网站：[https://golang.org/](https://golang.org/)
 
 
 ## 特性
