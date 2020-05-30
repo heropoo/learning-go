@@ -1,4 +1,2 @@
-# learning-go
-learning-go
-
-[golangbot系列教程翻译](https://www.yuque.com/ksco/ogg7um)
+# 《开始学习Go语言》系列教程
+https://www.ioio.pw/learning-go
