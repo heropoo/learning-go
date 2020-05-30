@@ -4,14 +4,10 @@ date: 2020-05-30 12:30:30
 tags:
 ---
 
-Go语言介绍
+Go 是一个开源的编程语言，它能让构造简单、可靠且高效的软件变得容易。
 
-```go
-package main
+Go是从2007年末由Robert Griesemer, Rob Pike, Ken Thompson主持开发，后来还加入了Ian Lance Taylor, Russ Cox等人，并最终于2009年11月开源，在2012年早些时候发布了Go 1.0稳定版本。现在Go的开发已经是完全开放的，并且拥有一个活跃的社区。
 
-import "fmt"
 
-func main() {  
-    fmt.Println("Hello World")
-}
-```
+Go 是一种通用编程语言，语法简单，并有健壮的标准库支持。Go 突出的一个关键领域是创建高可用性和可伸缩的 web 应用程序。Go 还可以用于创建命令行应用程序、桌面应用程序甚至移动应用程序。
+
