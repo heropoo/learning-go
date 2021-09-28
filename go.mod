@@ -2,4 +2,8 @@ module gitee.com/haha1231/gin-test
 
 go 1.14
 
-require github.com/gin-gonic/gin v1.6.3
+require (
+	github.com/astaxie/beego v1.12.3
+	github.com/gin-gonic/gin v1.7.0
+	github.com/go-sql-driver/mysql v1.6.0
+)
