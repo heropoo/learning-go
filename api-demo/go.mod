@@ -1,4 +1,4 @@
-module github.com/learning-go/api-demo
+module github.com/heropoo/learning-go/api-demo
 
 go 1.16
 
@@ -15,4 +15,5 @@ require (
 	golang.org/x/text v0.3.7 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
+	gorm.io/gorm v1.21.15 // indirect
 )
