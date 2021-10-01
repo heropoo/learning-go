@@ -3,13 +3,12 @@ module api-demo
 go 1.17
 
 require (
-	github.com/gin-gonic/autotls v0.0.3
 	github.com/gin-gonic/gin v1.7.4
 	github.com/go-sql-driver/mysql v1.6.0
+	github.com/cosmtrek/air v1.27.3 
 )
 
 require (
-	github.com/cosmtrek/air v1.27.3 // indirect
 	github.com/creack/pty v1.1.16 // indirect
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/fsnotify/fsnotify v1.5.1 // indirect

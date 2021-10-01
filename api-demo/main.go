@@ -31,5 +31,4 @@ func main() {
 	router.POST("/api/login", handleLogin)
 
 	router.Run(":8000") // listen on 0.0.0.0:8000
-	//log.Fatal(autotls.Run(router, "demo.gotoo.ml"))
 }
