@@ -6,6 +6,8 @@ import (
 	"math/rand"
 
 	"github.com/gin-gonic/gin"
+
+	_ "github.com/go-sql-driver/mysql"
 )
 
 type CaptchaData struct {
