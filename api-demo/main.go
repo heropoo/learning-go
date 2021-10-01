@@ -27,19 +27,9 @@ func main() {
 		})
 	})
 
-	router.POST("/api/login-captcha", func(c *gin.Context) {
-
-		phone := c.PostForm("phone")
-		captcha := getLoginCaptcha(phone)
-
-		c.JSON(http.StatusOK, gin.H{
-			"code":    0,
-			"message": "success",
-			"data":    captcha,
-		})
-	})
+	router.POST("/api/login-captcha", handleGetLoginCaptcha)
+	router.POST("/api/login", handleLogin)
 
 	router.Run(":8000") // listen on 0.0.0.0:8000
 	//log.Fatal(autotls.Run(router, "demo.gotoo.ml"))
-
 }
