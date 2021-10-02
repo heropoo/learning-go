@@ -33,6 +33,8 @@ func handleGetLoginCaptcha(c *gin.Context) {
 		return
 	}
 
+	getDB()
+
 	c.JSON(http.StatusOK, gin.H{
 		"code":    0,
 		"message": "success",
